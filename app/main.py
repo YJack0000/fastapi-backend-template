@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from routers.setup_router import setup_router
+from app.routers.setup_router import setup_router
 
 app = FastAPI()
 setup_router(app)

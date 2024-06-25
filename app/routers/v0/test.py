@@ -1,8 +1,8 @@
 from fastapi import APIRouter, HTTPException
 from app.core.example.example_logic import ExampleLogic
 from app.core.repo.aa_repo import AARepo
-from app.infra.mm_aa_repo import MMAARepo
-from .dto import TestRequest, TestResponse
+from app.infra.repo.mm_aa_repo import MMAARepo
+from .dtos import TestRequest, TestResponse
 
 router = APIRouter(
     prefix="/test",
